@@ -3,14 +3,17 @@
 
 :root {
 	// Color Definitions.
-	--wpe--color--black: #000;
+	--wpe--color--black: #313131;
 	--wpe--color--white: #fff;
 	--wpe--color--offwhite: #f7f7f7;
-	--wpe--color--neutral: rgba(175,184,193,0.2);
+	--wpe--color--neutral: rgba(175, 184, 193, 0.2);
 	--wpe--color--slate: #0a2540;
 	--wpe--color--purple: #635bff;
+	--wpe--color--transparent: transparent;
 
 	// Color Assignments.
+	--wpe--color--secondary: var(--wpe--color--transparent);
+	--wpe--color--primary: var(--wpe--color--purple);
 	--wpe--color--accent: var(--wpe--color--purple);
 	--wpe--color--accent--dark: var(--wpe--color--slate);
 	--wpe--color--title: var(--wpe--color--black);
@@ -30,17 +33,38 @@
 	--wpe--heading--color: var(--wpe--color--accent);
 	--wpe--border--light: 1px solid var(--wpe--color--neutral);
 	--wpe--border--extra-light: 1px solid var(--wpe--color--offwhite);
+	--wpe--border--dark: 1px solid var(--wpe--color--purple);
 
 	// Type.
 	--wpe--font-weight--light: 300;
 	--wpe--font-weight--medium: 400;
 	--wpe--font-weight--bold: 700;
 
+	// Font Sizes.
+	--wpe--font-size--xsmall: 0.75rem;
+	--wpe--font-size--small: 1rem;
+	--wpe--font-size--medium: 1.5rem;
+	--wpe--font-size--large: 2rem;
+	--wpe--font-size--x-large: 3rem;
+	--wpe--font-size--xx-large: 5rem;
+
 	// Spacing.
-	--wpe--content--max-width: 620px;
-	--wpe--section--padding-y: 3rem;
-	--wpe--container--padding-x: 15px;
-	--wpe--container--max-width: 1000px;
+
+  // Default Container
+  --wpe--container--padding-x: 15px;
+  --wpe--container--max-width: 1200px;
+
+  // Narrow Container
+  --wpe--narrow-container--padding-x: 10px;
+  --wpe--narrow-container--max-width: 800px;
+
+  // Wide Container
+  --wpe--wide-container--padding-x: 30px;
+  --wpe--wide-container--max-width: 1800px;
+
+  // Extra Wide Container
+  --wpe--extra-wide-container--padding-x: 30px;
+  --wpe--extra-wide-container--max-width: 2000px;
 
 	// Shadows.
 	--wpe--shadow--large: 0 50px 120px -40px rgba(150, 150, 150, 0.2), 0 20px 60px -30px rgba(0, 0, 0, 0.5);

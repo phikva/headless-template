@@ -9,6 +9,7 @@ import {
   NavigationMenu,
   Hero,
   SEO,
+  ClientShowcase,
 } from '../components';
 
 export default function Component() {
@@ -30,12 +31,11 @@ export default function Component() {
         menuItems={primaryMenu}
       />
       <Main>
-        <Container>
-          <Hero title={'Front Page'} />
-          <div className="text-center">
-            <p>This page is utilizing the "front-page" WordPress template.</p>
-            <code>wp-templates/front-page.js</code>
-          </div>
+        <Container variant='wide'>
+          <Hero pageId="home" pageIdType="URI" title={'Front Page'} />
+        </Container>
+        <Container variant='extra-wide'>
+          <ClientShowcase pageId="home" pageIdType="URI" />
         </Container>
       </Main>
       <Footer title={siteTitle} menuItems={footerMenu} />

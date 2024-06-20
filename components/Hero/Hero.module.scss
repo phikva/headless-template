@@ -1,26 +1,85 @@
 @import "styles/breakpoints";
 
 .component {
-	text-align: center;
-	padding: 6rem 1rem;
-	line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 6rem 0;
+  margin: 0 auto;
+  line-height: 1.3;
+  position: relative;
+
+  &.no-media {
+    justify-content: center;
+    .content {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.media {
+  flex: 1;
+  max-width: 50%;
+  
+  img, video {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    max-width: 100%;
+  }
+}
+
+.content {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 2rem;
+
+  .title {
+	display: block;
+    font-size: var(--wpe--font-size--xx-large);
+    color: var(--wpe--color--title);
+	max-width: 1200px;
 	margin: 0 auto;
-	max-width: var(--wpe--container--max-width);
-	position: relative;
-}
+  }
 
-.title {
-	display: block;
-	font-size: 5rem;
-	z-index: 1;
-	position: relative;
+  .subtitle {
+    font-size: var(--wpe--font-size--medium);
+    color: var(--wpe--color--title);
+	font-weight: var(--wpe--font-weight--medium);
+  }
 
-	@media (max-width: $breakpoint-small) {
-		font-size: 3rem;
-	}
-}
+  .cta-wrapper {
+    margin-top: 2rem;
 
-.subtitle {
-	display: block;
-	font-size: 3rem;
+    .cta {
+      display: inline-block;
+      margin-right: 1rem;
+      padding: 1rem 2rem;
+      background-color: var(--wpe--color--primary);
+      color: var(--wpe--color--white);
+      text-decoration: none;
+      border-radius: 5px;
+      border: var(--wpe--border--dark);
+
+      &.secondary {
+        background-color: var(--wpe--color--secondary);
+        color: var(--wpe--color--title);
+        border: var(--wpe--border--dark);
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-small) {
+    max-width: 100%;
+    padding: 2rem 0;
+  }
 }

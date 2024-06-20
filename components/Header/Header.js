@@ -16,7 +16,7 @@ export default function Header({
   return (
     <header className={cx('component')}>
       <SkipNavigationLink />
-        <Container>
+        <Container variant='wide'>
           <div className={cx('navbar')}>
             <div className={cx('brand')}>
               <Link href="/">

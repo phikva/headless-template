@@ -1,11 +1,17 @@
 import styles from './Container.module.scss';
-import className from 'classnames/bind';
+import classNames from 'classnames/bind';
 
-let cx = className.bind(styles);
+let cx = classNames.bind(styles);
 
-export default function Container({ children, className }) {
+export default function Container({ children, className, variant = 'default' }) {
   return (
-    <div className={cx(['component', className])}>
+    <div className={cx({
+      component: variant === 'default',
+      'wide-component': variant === 'wide',
+      'narrow-component': variant === 'narrow',
+      'extra-wide-component': variant === 'extra-wide',
+      [className]: className
+    })}>
       {children}
     </div>
   );

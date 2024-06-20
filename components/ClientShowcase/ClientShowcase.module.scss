@@ -1,0 +1,41 @@
+@import '../../styles/breakpoints'; // Adjust the import path accordingly
+
+
+.carousel-container {
+  display: flex;
+  justify-content: center; // Center the grid container within the parent
+  align-items: center;
+  padding: 2rem;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2rem; // Increase gap between grid items
+  justify-items: center; // Center items within grid cells
+  align-items: center; // Center items within grid cells
+  width: 100%;
+  max-width: 1200px; // Ensure the grid container has a max-width
+  margin: 0 auto; // Center the grid container within the parent
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; // Add padding to each logo for additional spacing
+
+    img {
+      width: auto;
+      max-height: 100px;
+
+      @media (min-width: $breakpoint-small) {
+        max-height: 150px;
+      }
+
+      @media (min-width: $breakpoint-medium) {
+        max-height: 200px;
+      }
+
+    }
+  }
+}

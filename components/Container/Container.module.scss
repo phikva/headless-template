@@ -1,7 +1,35 @@
+// Default Container
 .component {
 	padding-right: var(--wpe--container--padding-x);
 	padding-left: var(--wpe--container--padding-x);
 	margin-right: auto;
 	margin-left: auto;
 	max-width: var(--wpe--container--max-width);
+}
+
+// Wide Container
+.wide-component {
+	padding-right: var(--wpe--wide-container--padding-x);
+	padding-left: var(--wpe--wide-container--padding-x);
+	margin-right: auto;
+	margin-left: auto;
+	max-width: var(--wpe--wide-container--max-width);
+}
+
+// Extra Wide Container
+.extra-wide-component {
+	padding-right: var(--wpe--extra-wide-container--padding-x);
+	padding-left: var(--wpe--extra-wide-container--padding-x);
+	margin-right: auto;
+	margin-left: auto;
+	max-width: var(--wpe--extra-wide-container--max-width);
+  }
+
+// Narrow Container
+.narrow-component {
+	padding-right: var(--wpe--narrow-container--padding-x);
+	padding-left: var(--wpe--narrow-container--padding-x);
+	margin-right: auto;
+	margin-left: auto;
+	max-width: var(--wpe--narrow-container--max-width);
 }
