@@ -10,6 +10,7 @@ import {
   Hero,
   SEO,
   ClientShowcase,
+  ContentBlock,
 } from '../components';
 
 export default function Component() {
@@ -36,6 +37,9 @@ export default function Component() {
         </Container>
         <Container variant='extra-wide'>
           <ClientShowcase pageId="home" pageIdType="URI" />
+        </Container>
+        <Container variant='wide'>
+          <ContentBlock pageId="home" pageIdType="URI" />
         </Container>
       </Main>
       <Footer title={siteTitle} menuItems={footerMenu} />
