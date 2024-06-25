@@ -14,3 +14,4 @@ export { Hero } from './Hero';
 export { Post } from './Post';
 export { SEO } from './SEO';
 export { ClientShowcase } from './ClientShowcase'
+export { ContentBlock } from './ContentBlock'

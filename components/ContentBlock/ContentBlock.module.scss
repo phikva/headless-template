@@ -93,11 +93,21 @@
       font-weight: var(--wpe--font-weight--medium);
     }
 
-    .cta-wrapper {
-      margin-top: 2rem;
 
+  
+      .cta {
+        display: inline-block;
+        margin-right: 1rem;
+        padding: 1rem 2rem;
+        background-color: var(--wpe--color--primary);
+        color: var(--wpe--color--white);
+        text-decoration: none;
+        border-radius: 5px;
+        border: var(--wpe--border--dark);
+  
 
-    }
+      }
+
 
     @media (max-width: $breakpoint-small) {
       max-width: 100%;
